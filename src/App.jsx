@@ -1,12 +1,19 @@
 import './App.css'
-import Contact from './Components/Contact';
+import Header from './Components/Header';
+import Links from './Components/Links';
+import TechSkills from './Components/Skills';
+import Objective from './Components/AboutMe';
 
 function App() {
   
 
   return (
-    <div className="bg-yellow-100 min-h-screen flex justify-center items-center">
-    <Contact />
+    <div className="">
+    <Header />
+    <Links />
+    <TechSkills />
+    <Objective />
+
     </div>
   )
 }

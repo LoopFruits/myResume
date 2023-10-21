@@ -1,10 +1,11 @@
-const Skills = () => {
+const TechSkills = () => {
 
     return(
     <>
+    
     </>
     )
 
 }
 
-export default Skills;
+export default TechSkills;
