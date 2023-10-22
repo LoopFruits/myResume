@@ -1,9 +1,10 @@
 const  Links     = () => {
     return (
     <div>
-        <a href="#">Github</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Blog</a>    
+        <a href="https://github.com/LoopFruits">Github</a>
+        <a href="https://kenneththedev.netlify.app/">Portfolio</a>  
+        <a href="https://medium.com/@Kenneththedev">Blog</a>    
+
     </div>
     );
 }
