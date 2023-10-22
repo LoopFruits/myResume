@@ -16,8 +16,8 @@ const TechSkills = () => {
     ]
 
     return (
-        <div>
-            <h2>Technical Skills</h2>
+        <div className="p-6">
+            <h2 className="text-xl front-semibold mb-4">Technical Skills</h2>
             <ul>
                 {skills.map(skill => <li key={skill}>{skill}</li>)}
             </ul>

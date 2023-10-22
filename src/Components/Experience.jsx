@@ -21,12 +21,12 @@ const Experience = () => {
                     "Successfully pitched and clarified the business plan for our application, AnyPay.",
                 ],
         },
-        // ... Add other jobs similarly
+        
     ];
     
     return (
-        <div>
-            <h2>EXPERIENCE</h2>
+        <div className="p-6 border-t border-gray-200">
+            <h2>Experience</h2>
             {jobs.map(job => <Job {...job} key={job.role} />)}
         </div>
     );
