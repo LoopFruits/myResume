@@ -20,8 +20,8 @@ const Education = () => {
 
 
     return (
-        <div>
-            <h2>EDUCATION</h2>
+        <div className="p-6 border-t border-gray-200">
+            <h2 className="text-xl front-semibold md-4">Education</h2>
             {institutions.map(inst => <Institution {...inst} key={inst.school} />)}
         </div>
     );
@@ -29,11 +29,11 @@ const Education = () => {
 
 function Institution({ school, degree, coursework, date }) {
     return (
-        <div>
-            <h3>{school}</h3>
-            <p>{degree}</p>
-            <p>{coursework}</p>
-            <p>{date}</p>
+        <div className="mb-4">
+            <h3 className="">{school}</h3>
+            <p className="mt-1">{degree}</p>
+            {coursework && <p className="text-gray-600 mt-1">{coursework}</p>}
+            <p className="text-gray-500">{date}</p>
         </div>
     );
 }

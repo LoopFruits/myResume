@@ -38,8 +38,8 @@ const Projects = () => {
         ]
 
         return (
-            <div>
-                <h2>TECHNICAL PROJECTS</h2>
+            <div className="p-6 border-t border-gray-200">
+                <h2 className="text-xl mb-4">Technical Projects</h2>
                 {projects.map(project => <Project {...project} key={project.title} />)}
             </div>
         );
@@ -47,10 +47,10 @@ const Projects = () => {
     
     const Project = ({ title, link, description, details }) => {
         return (
-            <div>
-                <a href={link}>{title}</a>
-                <p>{description}</p>
-                <ul>
+            <div className="mb-4">
+                <a className="text-lg font-medium" href={link}>{title}</a>
+                <p className="list-disc list-inside mt-2 text-md">{description}</p>
+                <ul className="list-disc list-inside mt-2 text-md">
                     {details.map(detail => <li key={detail}>{detail}</li>)}
                 </ul>
             </div>

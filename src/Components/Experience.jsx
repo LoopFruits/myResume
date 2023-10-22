@@ -26,7 +26,7 @@ const Experience = () => {
     
     return (
         <div className="p-6 border-t border-gray-200">
-            <h2>Experience</h2>
+            <h2 className="font-semi bold text-xl mb-4">Experience</h2>
             {jobs.map(job => <Job {...job} key={job.role} />)}
         </div>
     );
@@ -34,10 +34,10 @@ const Experience = () => {
 
 function Job({ role, company, duration, tasks }) {
     return (
-        <div>
-            <h3>{role} at {company}</h3>
-            <p>{duration}</p>
-            <ul>
+        <div className="mb-4">
+            <h3 className="text-lg font-medium">{role} at {company}</h3>
+            <p className="text-gray-500">{duration}</p>
+            <ul className="list-disc list-inside mt-2 text-md">
                 {tasks.map(task => <li key={task}>{task}</li>)}
             </ul>
         </div>
